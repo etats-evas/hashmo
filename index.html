@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moment Hasher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Moment Hasher</h1>
+    <textarea id="momentInput" placeholder="Write your moment..." rows="6"></textarea>
+    <div class="buttons">
+      <button onclick="hashMoment()">📎 Hash Moment</button>
+      <button onclick="saveMoment()">💾 Save</button>
+      <button onclick="exportMoments()">📤 Export</button>
+    </div>
+    <div class="output">
+      <p><strong>🔑 Hash:</strong> <span id="hashOutput">-</span></p>
+    </div>
+    <div class="saved-moments">
+      <h2>📜 Saved Moments</h2>
+      <ul id="savedList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
